@@ -5,7 +5,6 @@
 package sys
 
 import (
-	"errors"
 	"runtime"
 	"runtime/debug"
 	"strings"
