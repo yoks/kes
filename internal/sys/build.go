@@ -38,7 +38,7 @@ var readBinaryInfo = sync.OnceValues[BinaryInfo, error](func() (BinaryInfo, erro
 
 	info, ok := debug.ReadBuildInfo()
 	if !ok {
-		return binaryInfo, errors.New("sys: binary does not contain build info")
+		return binaryInfo, nil
 	}
 
 	const (
